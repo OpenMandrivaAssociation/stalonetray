@@ -1,6 +1,6 @@
 %define name	stalonetray
 %define version	0.8.0
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name: 	 	%{name}
 Summary: 	Stand-alone, full-featured system tray
