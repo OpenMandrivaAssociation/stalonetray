@@ -1,18 +1,13 @@
-%define name	stalonetray
-%define version	0.8.0
-%define release %mkrel 3
-
-Name: 	 	%{name}
+Name: 	 	stalonetray
 Summary: 	Stand-alone, full-featured system tray
-Version: 	%{version}
-Release: 	%{release}
+Version: 	0.8.1
+Release: 	1
 
 Source:		%{name}-%{version}.tar.bz2
 Patch0:		stalonetray-0.8.0-fix-str-fmt.patch
 URL:		http://stalonetray.sourceforge.net/
 License:	GPLv2
 Group:		Graphical desktop/Other
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	X11-devel
 
 %description
@@ -26,12 +21,15 @@ EWMH-compliant window manager.
 %patch0 -p1 -b .strfmt
 
 %build
-%configure
+%configure2_5x
 %make
 										
 %install
 rm -rf %{buildroot}
 %makeinstall_std
+
+%check
+%make check
 
 %clean
 rm -rf %{buildroot}
