@@ -1,0 +1,12 @@
+diff -p -up stalonetray-0.8.0/src/debug.c.strfmt stalonetray-0.8.0/src/debug.c
+--- stalonetray-0.8.0/src/debug.c.strfmt	2009-12-31 00:03:28.000000000 +0100
++++ stalonetray-0.8.0/src/debug.c	2009-12-31 00:09:53.000000000 +0100
+@@ -28,7 +28,7 @@ void print_message_to_stderr(const char 
+ 	va_start(va, fmt);
+ 	vsnprintf(msg, PATH_MAX, fmt, va);
+ 	va_end(va);
+-	fprintf(stderr, msg);
++	fprintf(stderr, "%s", msg);
+ }
+ 
+ #ifdef DEBUG
