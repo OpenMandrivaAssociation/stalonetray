@@ -1,7 +1,7 @@
 Name: 	 	stalonetray
 Summary: 	Stand-alone, full-featured system tray
 Version: 	0.8.1
-Release: 	1
+Release: 	2
 
 Source:		%{name}-%{version}.tar.bz2
 Patch0:		stalonetray-0.8.0-fix-str-fmt.patch
