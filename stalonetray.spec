@@ -5,7 +5,7 @@ Release: 	2
 
 Source:		%{name}-%{version}.tar.bz2
 Patch0:		stalonetray-0.8.0-fix-str-fmt.patch
-URL:		http://stalonetray.sourceforge.net/
+URL:		https://stalonetray.sourceforge.net/
 License:	GPLv2
 Group:		Graphical desktop/Other
 BuildRequires:	X11-devel
