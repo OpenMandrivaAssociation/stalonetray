@@ -8,6 +8,11 @@ Patch0:		stalonetray-0.8.0-fix-str-fmt.patch
 URL:		https://stalonetray.sourceforge.net/
 License:	GPLv2
 Group:		Graphical desktop/Other
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	X11-devel
 
 %description
