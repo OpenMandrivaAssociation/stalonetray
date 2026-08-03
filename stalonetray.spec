@@ -1,7 +1,7 @@
 Name: 	 	stalonetray
 Summary: 	Stand-alone, full-featured system tray
-Version: 	0.8.1
-Release: 	2
+Version: 	1.5.0
+Release: 	1
 
 Source:		%{name}-%{version}.tar.bz2
 Patch0:		stalonetray-0.8.0-fix-str-fmt.patch
@@ -23,7 +23,7 @@ EWMH-compliant window manager.
 
 %prep
 %setup -q
-%patch0 -p1 -b .strfmt
+%patch -P0 -p1 -b .strfmt
 
 %build
 %configure2_5x
